@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<PropertyList>
+    <generic>
+        <input>
+            <line_separator>newline</line_separator>
+            <var_separator>,</var_separator>
+            <!-- Controls -->
+            <chunk>
+                <name>elevator</name>
+                <type>float</type>
+                <node>/controls/flight/elevator</node>
+                <format>%f</format>
+            </chunk>
+        </input>
+    </generic>
+</PropertyList>
