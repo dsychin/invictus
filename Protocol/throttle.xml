@@ -8,7 +8,7 @@
             <chunk>
                 <name>throttle</name>
                 <type>float</type>
-                <node>/controls/engines/current-engine/throttle</node>
+                <node>/controls/engines/engine/throttle</node>
                 <format>%f</format>
             </chunk>
         </input>

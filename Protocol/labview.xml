@@ -23,19 +23,19 @@
                 <format>%07.3f</format>
             </chunk>
 			<chunk>
-                <node>/instrumentation/attitude-indicator/indicated-pitch-deg</node>
+                <node>/orientation/pitch-deg</node>
                 <name>Pitch deg</name>
                 <type>float</type>
                 <format>%07.3f</format>
             </chunk>
 			<chunk>
-                <node>/instrumentation/attitude-indicator/indicated-roll-deg</node>
+                <node>/orientation/roll-deg</node>
                 <name>Roll deg</name>
                 <type>float</type>
                 <format>%07.3f</format>
             </chunk>
 			<chunk>
-                <node>/instrumentation/heading-indicator/indicated-heading-deg</node>
+                <node>/orientation/heading-deg</node>
                 <name>Heading deg</name>
                 <type>float</type>
                 <format>%07.3f</format>
@@ -59,34 +59,5 @@
                 <format>%018.14f</format>
             </chunk>
         </output>
-        <input>
-            <line_separator>newline</line_separator>
-            <var_separator>,</var_separator>
-            <!-- Controls -->
-            <chunk>
-                <name>aileron</name>
-                <type>float</type>
-                <node>/controls/flight/aileron</node>
-                <format>%f</format>
-            </chunk>
-            <chunk>
-                <name>elevator</name>
-                <type>float</type>
-                <node>/controls/flight/elevator</node>
-                <format>%f</format>
-            </chunk>
-            <chunk>
-                <name>throttle</name>
-                <type>float</type>
-                <node>/controls/engines/engine/throttle</node>
-                <format>%f</format>
-            </chunk>
-            <chunk>
-                <name>rudder</name>
-                <type>float</type>
-                <node>/controls/flight/rudder</node>
-                <format>%f</format>
-            </chunk>
-        </input>
     </generic>
 </PropertyList>
