@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<PropertyList>
+    <generic>
+        <output>
+            <line_separator>newline</line_separator>
+            <var_separator>,</var_separator>
+            <chunk>
+                <node>/instrumentation/airspeed-indicator/indicated-speed-kt</node>
+                <name>Airspeed</name>
+                <type>float</type>
+                <format>%07.3f</format>
+            </chunk>
+            <chunk>
+                <node>/instrumentation/altimeter/indicated-altitude-ft</node>
+                <name>altitude</name>
+                <type>float</type>
+                <format>%09.3f</format>
+            </chunk>
+            <chunk>
+                <node>/instrumentation/vertical-speed-indicator/indicated-speed-kts</node>
+                <name>vertical speed</name>
+                <type>float</type>
+                <format>%07.3f</format>
+            </chunk>
+			<chunk>
+                <node>/orientation/pitch-deg</node>
+                <name>Pitch deg</name>
+                <type>float</type>
+                <format>%07.3f</format>
+            </chunk>
+			<chunk>
+                <node>/orientation/roll-deg</node>
+                <name>Roll deg</name>
+                <type>float</type>
+                <format>%07.3f</format>
+            </chunk>
+			<chunk>
+                <node>/orientation/heading-deg</node>
+                <name>Heading deg</name>
+                <type>float</type>
+                <format>%07.3f</format>
+            </chunk>
+			<chunk>
+                <node>/instrumentation/turn-indicator/indicated-turn-rate</node>
+                <name>Turn indicator</name>
+                <type>float</type>
+                <format>%06.3f</format>
+            </chunk>
+			<chunk>
+                <node>/position/latitude-deg</node>
+                <name>Latitude</name>
+                <type>float</type>
+                <format>%018.14f</format>
+            </chunk>
+            <chunk>
+                <node>/position/longitude-deg</node>
+                <name>Longitude</name>
+                <type>float</type>
+                <format>%018.14f</format>
+            </chunk>
+        </output>
+    </generic>
+</PropertyList>
