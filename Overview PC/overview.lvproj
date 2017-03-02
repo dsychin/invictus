@@ -1,6 +1,6 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
 <Project Type="Project" LVVersion="15008000">
-	<Property Name="varPersistentID:{885382B9-E0C3-4A3A-97D2-C6E92A314F14}" Type="Ref">/My Computer/location.lvlib/location</Property>
+	<Property Name="varPersistentID:{B326A8F8-C6E4-4983-99AB-DA0E9636FCA5}" Type="Ref">/My Computer/pc1.lvlib/Variable3</Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.control.propertiesEnabled" Type="Bool">true</Property>
@@ -11,19 +11,9 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="autopilot.vi" Type="VI" URL="../autopilot.vi"/>
-		<Item Name="global.vi" Type="VI" URL="../global.vi"/>
-		<Item Name="input.vi" Type="VI" URL="../input.vi"/>
-		<Item Name="location.lvlib" Type="Library" URL="../location.lvlib"/>
 		<Item Name="main.vi" Type="VI" URL="../main.vi"/>
-		<Item Name="Dependencies" Type="Dependencies">
-			<Item Name="vi.lib" Type="Folder">
-				<Item Name="lvpidtkt.dll" Type="Document" URL="/&lt;vilib&gt;/addons/control/pid/lvpidtkt.dll"/>
-				<Item Name="NI_PID__prctrl compat.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/control/pid/NI_PID__prctrl compat.lvlib"/>
-				<Item Name="NI_PID_pid.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/control/pid/NI_PID_pid.lvlib"/>
-				<Item Name="NI_PtbyPt.lvlib" Type="Library" URL="/&lt;vilib&gt;/ptbypt/NI_PtbyPt.lvlib"/>
-			</Item>
-		</Item>
+		<Item Name="pc1.lvlib" Type="Library" URL="../pc1.lvlib"/>
+		<Item Name="Dependencies" Type="Dependencies"/>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
 </Project>
