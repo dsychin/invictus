@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <body scroll="no">
+    <title>Maps</title>
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script>
+      var map;
+      var markers = [];
+
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 12,
+          center: {lat: 52, lng: 1},
+          mapTypeId: 'hybrid'
+        });
+      }
+
+      // Adds a marker to the map and push to the array.
+      function addMarker(latitude, longitude) {
+        var location = new google.maps.LatLng(latitude, longitude)
+        var marker = new google.maps.Marker({
+          position: location,
+          map: map
+        });
+        markers.push(marker);
+      }
+
+      // Sets the map on all markers in the array.
+      function setMapOnAll(map) {
+        for (var i = 0; i < markers.length; i++) {
+          markers[i].setMap(map);
+        }
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtk_dguaCxLdYbq4T_vz3lAOeWRvlDc-M&callback=initMap">
+    </script>
+  </body>
+</html>
