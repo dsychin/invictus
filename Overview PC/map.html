@@ -24,12 +24,26 @@
       var map;
       var markers = [];
 
+      // Google maps polyline to be stored in array
+      var flightPath = [];
+
+      // 2D array to store aircraft index and path coordinates
+      // flightPathCoordinates[index][LatLng string]
+      var flightPathCoordinates = [[],[]];
+
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 12,
+          zoom: 10,
           center: {lat: 52, lng: 1},
           mapTypeId: 'hybrid'
         });
+
+        //Initialise the two markers to be used.
+        addMarker(52,1);
+        markers[0].setLabel('1');
+        addMarker(52,2);
+        markers[1].setLabel('2');
+
       }
 
       // Adds a marker to the map and push to the array.
@@ -46,6 +60,57 @@
       function setMapOnAll(map) {
         for (var i = 0; i < markers.length; i++) {
           markers[i].setMap(map);
+        }
+      }
+
+      // Zoom to fit the two markers in map
+      function zoomToFit(){
+        var bounds = new google.maps.LatLngBounds();
+
+        // get position of the two markers
+        // add marker to bound if it is visible
+        for (i = 0; i < 2; i++){
+          if (markers[i].getVisible() == true) {
+            // extend bound to include the marker
+            bounds.extend(markers[i].getPosition());
+          }
+        }
+        
+        // markers in bound
+        map.fitBounds(bounds);
+      }
+
+      // Follow aircraft
+      // provide aircraft index number
+      function followAircraft(index){
+        if (markers[index].getVisible()==true){
+          map.setCenter(markers[index].getPosition());
+        }
+      }
+
+      // Move aircraft
+      function moveAircraft(index, latitude, longitude){
+        markers[index].setPosition({lat:latitude, lng:longitude});
+        flightPathCoordinates[index].push({lat:latitude, lng:longitude});
+      }
+
+      // Record and draw polygon trail of flight path
+      function drawPath(){
+        for (i = 0; i < 2; i++){
+          if (markers[i].getVisible() == true){
+            flightPath[i] = new google.maps.Polyline({
+              path: flightPathCoordinates[i],
+              geodesic: true,
+              strokeColor: '#FF0000',
+              strokeOpacity: 1.0,
+              strokeWeight: 2
+            });
+            flightPath[i].setMap(map);
+          }
+          else {
+            // hide flightpath if marker is invisible
+            flightPath[i].setMap(null);
+          }
         }
       }
     </script>

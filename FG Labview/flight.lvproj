@@ -1,6 +1,6 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
 <Project Type="Project" LVVersion="15008000">
-	<Property Name="varPersistentID:{885382B9-E0C3-4A3A-97D2-C6E92A314F14}" Type="Ref">/My Computer/location.lvlib/location</Property>
+	<Property Name="varPersistentID:{885382B9-E0C3-4A3A-97D2-C6E92A314F14}" Type="Ref">/My Computer/datacluster.lvlib/shareddata</Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.control.propertiesEnabled" Type="Bool">true</Property>
@@ -12,9 +12,10 @@
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="autopilot.vi" Type="VI" URL="../autopilot.vi"/>
+		<Item Name="datacluster.lvlib" Type="Library" URL="../datacluster.lvlib"/>
+		<Item Name="global.ctl" Type="VI" URL="../global.ctl"/>
 		<Item Name="global.vi" Type="VI" URL="../global.vi"/>
 		<Item Name="input.vi" Type="VI" URL="../input.vi"/>
-		<Item Name="location.lvlib" Type="Library" URL="../location.lvlib"/>
 		<Item Name="main.vi" Type="VI" URL="../main.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
