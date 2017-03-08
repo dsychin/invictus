@@ -84,7 +84,7 @@
       // provide aircraft index number
       function followAircraft(index){
         if (markers[index].getVisible()==true){
-          map.setCenter(markers[index].getPosition());
+          map.panTo(markers[index].getPosition());
         }
       }
 
