@@ -17,10 +17,10 @@
                 <format>%09.3f</format>
             </chunk>
             <chunk>
-                <node>/instrumentation/vertical-speed-indicator/indicated-speed-kts</node>
+                <node>/instrumentation/vertical-speed-indicator/indicated-speed-fpm</node>
                 <name>vertical speed</name>
                 <type>float</type>
-                <format>%07.3f</format>
+                <format>%07.1f</format>
             </chunk>
 			<chunk>
                 <node>/orientation/pitch-deg</node>
