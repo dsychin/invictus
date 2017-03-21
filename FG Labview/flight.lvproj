@@ -11,6 +11,34 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
+		<Item Name="Windows API" Type="Folder">
+			<Item Name="WINUTIL" Type="Folder">
+				<Item Name="Extract Window Origin / Size.vi" Type="VI" URL="../WINUTIL.LLB/Extract Window Origin / Size.vi"/>
+				<Item Name="Flash Title Bar.vi" Type="VI" URL="../WINUTIL.LLB/Flash Title Bar.vi"/>
+				<Item Name="Generate String Buffer.vi" Type="VI" URL="../WINUTIL.LLB/Generate String Buffer.vi"/>
+				<Item Name="Get Window Name.vi" Type="VI" URL="../WINUTIL.LLB/Get Window Name.vi"/>
+				<Item Name="Get Window Rectangle.vi" Type="VI" URL="../WINUTIL.LLB/Get Window Rectangle.vi"/>
+				<Item Name="Get Window RefNum.vi" Type="VI" URL="../WINUTIL.LLB/Get Window RefNum.vi"/>
+				<Item Name="Hide Window.vi" Type="VI" URL="../WINUTIL.LLB/Hide Window.vi"/>
+				<Item Name="Make Window Always on Top.vi" Type="VI" URL="../WINUTIL.LLB/Make Window Always on Top.vi"/>
+				<Item Name="Maximize Window.vi" Type="VI" URL="../WINUTIL.LLB/Maximize Window.vi"/>
+				<Item Name="Minimize Window.vi" Type="VI" URL="../WINUTIL.LLB/Minimize Window.vi"/>
+				<Item Name="Move Window to Bottom.vi" Type="VI" URL="../WINUTIL.LLB/Move Window to Bottom.vi"/>
+				<Item Name="Move Window to Top.vi" Type="VI" URL="../WINUTIL.LLB/Move Window to Top.vi"/>
+				<Item Name="Move Window.vi" Type="VI" URL="../WINUTIL.LLB/Move Window.vi"/>
+				<Item Name="Not a Window Refnum" Type="VI" URL="../WINUTIL.LLB/Not a Window Refnum"/>
+				<Item Name="PostMessage Master.vi" Type="VI" URL="../WINUTIL.LLB/PostMessage Master.vi"/>
+				<Item Name="Rename Window.vi" Type="VI" URL="../WINUTIL.LLB/Rename Window.vi"/>
+				<Item Name="Resize Window.vi" Type="VI" URL="../WINUTIL.LLB/Resize Window.vi"/>
+				<Item Name="Restore Window.vi" Type="VI" URL="../WINUTIL.LLB/Restore Window.vi"/>
+				<Item Name="Revoke Window Always on Top.vi" Type="VI" URL="../WINUTIL.LLB/Revoke Window Always on Top.vi"/>
+				<Item Name="Set Window Z-Position.vi" Type="VI" URL="../WINUTIL.LLB/Set Window Z-Position.vi"/>
+				<Item Name="Show Window.vi" Type="VI" URL="../WINUTIL.LLB/Show Window.vi"/>
+				<Item Name="Window Rectangle.ctl" Type="VI" URL="../WINUTIL.LLB/Window Rectangle.ctl"/>
+				<Item Name="Window Refnum" Type="VI" URL="../WINUTIL.LLB/Window Refnum"/>
+			</Item>
+			<Item Name="LVWUtil32.dll" Type="Document" URL="../LVWUtil32.dll"/>
+		</Item>
 		<Item Name="autopilot.vi" Type="VI" URL="../autopilot.vi"/>
 		<Item Name="datacluster.lvlib" Type="Library" URL="../datacluster.lvlib"/>
 		<Item Name="global.ctl" Type="VI" URL="../global.ctl"/>
@@ -225,7 +253,13 @@
 				<Item Name="NI_PID_pid.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/control/pid/NI_PID_pid.lvlib"/>
 				<Item Name="NI_PtbyPt.lvlib" Type="Library" URL="/&lt;vilib&gt;/ptbypt/NI_PtbyPt.lvlib"/>
 			</Item>
+			<Item Name="kernel32.dll" Type="Document" URL="kernel32.dll">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
 			<Item Name="nilvaiu.dll" Type="Document" URL="nilvaiu.dll">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
+			<Item Name="user32.dll" Type="Document" URL="user32.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 		</Item>
