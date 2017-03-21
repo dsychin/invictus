@@ -12,7 +12,9 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
+		<Item Name="blink.vi" Type="VI" URL="../blink.vi"/>
 		<Item Name="dataclusters.lvlib" Type="Library" URL="../dataclusters.lvlib"/>
+		<Item Name="global.vi" Type="VI" URL="../global.vi"/>
 		<Item Name="main.vi" Type="VI" URL="../main.vi"/>
 		<Item Name="Dependencies" Type="Dependencies"/>
 		<Item Name="Build Specifications" Type="Build"/>

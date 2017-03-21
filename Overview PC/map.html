@@ -106,6 +106,15 @@
           //   for (var j = flightPathCoordinates[i].length - 1; j >= 0; j--){
           //     flightPathCoordinates[i].splice(j,1);
           //   }
+            flightPath[i] = new google.maps.Polyline({
+              path: flightPathCoordinates[i],
+              geodesic: true,
+              strokeColor: '#FF0000',
+              strokeOpacity: 1.0,
+              strokeWeight: 1,
+              map: map
+            });
+            flightPath[i].setVisible(false);
           } else {
             // line for first aircraft
             if (i == 0){
@@ -114,8 +123,10 @@
               geodesic: true,
               strokeColor: '#FF0000',
               strokeOpacity: 1.0,
-              strokeWeight: 1
+              strokeWeight: 1,
+              map: map
             });
+            flightPath[i].setVisible(true);
           } else {
             // line for second aircraft
             flightPath[i] = new google.maps.Polyline({
@@ -123,13 +134,13 @@
               geodesic: true,
               strokeColor: '#0000FF',
               strokeOpacity: 1.0,
-              strokeWeight: 1
+              strokeWeight: 1,
+              map: map
             });
+            flightPath[i].setVisible(true);
           }
 
           }
-
-            flightPath[i].setMap(map);
         }
       }
 
@@ -163,6 +174,14 @@
         };
       }
       return icon;
+      }
+
+      // Change marker colour to orange
+      // Use labview to show blinking
+      function turnOrange(index, heading){
+        var orangeIcon = icon(index, heading);
+        orangeIcon.fillColor = '#f2da00';
+        markers[index].setIcon(orangeIcon);
       }
     </script>
     <script async defer
