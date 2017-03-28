@@ -89,13 +89,13 @@
                 <format>%08.3f</format>
             </chunk>
 			<chunk>
-                <node>/sim/gui/size</node>
+                <node>/sim/gui/canvas/size</node>
                 <name>Width</name>
                 <type>int</type>
                 <format>%04d</format>
             </chunk>
 			<chunk>
-                <node>/sim/gui/size[1]</node>
+                <node>/sim/gui/canvas/size[1]</node>
                 <name>Height</name>
                 <type>int</type>
                 <format>%04d</format>

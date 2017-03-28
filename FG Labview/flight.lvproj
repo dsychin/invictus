@@ -46,6 +46,7 @@
 		<Item Name="input.vi" Type="VI" URL="../input.vi"/>
 		<Item Name="main.vi" Type="VI" URL="../main.vi"/>
 		<Item Name="Planecontrols.vi" Type="VI" URL="../Planecontrols.vi"/>
+		<Item Name="position_window.vi" Type="VI" URL="../position_window.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="DAQmx Clear Task.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/task.llb/DAQmx Clear Task.vi"/>

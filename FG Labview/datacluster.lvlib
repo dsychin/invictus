@@ -13,6 +13,6 @@
 		<Property Name="Network:UseBuffering" Type="Str">True</Property>
 		<Property Name="numTypedefs" Type="UInt">0</Property>
 		<Property Name="type" Type="Str">Network</Property>
-		<Property Name="typeDesc" Type="Bin">&amp;1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!%&amp;!1%!!"5!A!!!!!!+!!^!#A!)17FS=X"F:71!!!^!#A!)17RU;82V:'5!!"6!#A!/6G6S&gt;'FD97QA5X"F:71!!!N!#A!&amp;5'FU9WA!#U!+!!23&lt;WRM!!!.1!I!"UBF972J&lt;G=!&amp;5!+!!Z5&gt;8*O)%FO:'FD982P=A!!$U!+!!B-982J&gt;(6E:1!!$U!+!!F-&lt;WZH;82V:'5!)%"1!!E!!!!"!!)!!Q!%!!5!"A!(!!A(2E=A2'&amp;U91!"!!E!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</Property>
+		<Property Name="typeDesc" Type="Bin">&amp;1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!'GIA%!!"5!A!!!!!!2!!^!#A!)17FS=X"F:71!!!^!#A!)17RU;82V:'5!!"6!#A!/6G6S&gt;'FD97QA5X"F:71!!!N!#A!&amp;5'FU9WA!#U!+!!23&lt;WRM!!!.1!I!"UBF972J&lt;G=!&amp;5!+!!Z5&gt;8*O)%FO:'FD982P=A!!$U!+!!B-982J&gt;(6E:1!!$U!+!!F-&lt;WZH;82V:'5!$5!+!!&gt;Q;7RP&gt;#"H!"&amp;!!A!,&gt;GFF&gt;S"O&gt;7VC:8)!#5!+!!.G&lt;X9!%U!+!!RW;76X)'BF972J&lt;G=!!"&amp;!#A!+&gt;GFF&gt;S"Q;82D;!!!%5!#!!JH97VF)(&gt;J:(2I!!!21!)!#W&gt;B&lt;75A;'6J:WBU!#Z!5!!1!!!!!1!#!!-!"!!&amp;!!9!"Q!)!!E!#A!,!!Q!$1!/!!](2E=A2'&amp;U91!"!"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</Property>
 	</Item>
 </Library>
