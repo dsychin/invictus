@@ -8,43 +8,43 @@
                 <node>/instrumentation/airspeed-indicator/indicated-speed-kt</node>
                 <name>Airspeed</name>
                 <type>float</type>
-                <format>%07.3f</format>
+                <format>%08.3f</format>
             </chunk>
             <chunk>
                 <node>/instrumentation/altimeter/indicated-altitude-ft</node>
                 <name>altitude</name>
                 <type>float</type>
-                <format>%09.3f</format>
+                <format>%010.3f</format>
             </chunk>
             <chunk>
                 <node>/instrumentation/vertical-speed-indicator/indicated-speed-fpm</node>
                 <name>vertical speed</name>
                 <type>float</type>
-                <format>%07.1f</format>
+                <format>%08.1f</format>
             </chunk>
 			<chunk>
                 <node>/orientation/pitch-deg</node>
                 <name>Pitch deg</name>
                 <type>float</type>
-                <format>%07.3f</format>
+                <format>%08.3f</format>
             </chunk>
 			<chunk>
                 <node>/orientation/roll-deg</node>
                 <name>Roll deg</name>
                 <type>float</type>
-                <format>%07.3f</format>
+                <format>%08.3f</format>
             </chunk>
 			<chunk>
                 <node>/orientation/heading-deg</node>
                 <name>Heading deg</name>
                 <type>float</type>
-                <format>%07.3f</format>
+                <format>%08.3f</format>
             </chunk>
 			<chunk>
                 <node>/instrumentation/turn-indicator/indicated-turn-rate</node>
                 <name>Turn indicator</name>
                 <type>float</type>
-                <format>%06.3f</format>
+                <format>%08.3f</format>
             </chunk>
 			<chunk>
                 <node>/position/latitude-deg</node>
@@ -57,6 +57,48 @@
                 <name>Longitude</name>
                 <type>float</type>
                 <format>%018.14f</format>
+            </chunk>
+            <chunk>
+                <node>/accelerations/pilot-gdamped</node>
+                <name>Pilot G</name>
+                <type>float</type>
+                <format>%05.2f</format>
+            </chunk>
+            <chunk>
+                <node>/sim/current-view/view-number</node>
+                <name>View number</name>
+                <type>int</type>
+                <format>%02d</format>
+            </chunk>
+			<chunk>
+                <node>/sim/current-view/field-of-view</node>
+                <name>FOV</name>
+                <type>float</type>
+                <format>%06.2f</format>
+            </chunk>
+			<chunk>
+                <node>/sim/current-view/heading-offset-deg</node>
+                <name>View heading</name>
+                <type>float</type>
+                <format>%08.3f</format>
+            </chunk>
+			<chunk>
+                <node>/sim/current-view/pitch-offset-deg</node>
+                <name>View pitch</name>
+                <type>float</type>
+                <format>%08.3f</format>
+            </chunk>
+			<chunk>
+                <node>/sim/gui/size</node>
+                <name>Width</name>
+                <type>int</type>
+                <format>%04d</format>
+            </chunk>
+			<chunk>
+                <node>/sim/gui/size[1]</node>
+                <name>Height</name>
+                <type>int</type>
+                <format>%04d</format>
             </chunk>
         </output>
     </generic>
