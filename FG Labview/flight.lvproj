@@ -40,12 +40,13 @@
 			<Item Name="LVWUtil32.dll" Type="Document" URL="../LVWUtil32.dll"/>
 		</Item>
 		<Item Name="autopilot.vi" Type="VI" URL="../autopilot.vi"/>
+		<Item Name="crashdetect.vi" Type="VI" URL="../crashdetect.vi"/>
 		<Item Name="datacluster.lvlib" Type="Library" URL="../datacluster.lvlib"/>
 		<Item Name="global.ctl" Type="VI" URL="../global.ctl"/>
 		<Item Name="global.vi" Type="VI" URL="../global.vi"/>
 		<Item Name="input.vi" Type="VI" URL="../input.vi"/>
 		<Item Name="main.vi" Type="VI" URL="../main.vi"/>
-		<Item Name="Planecontrols.vi" Type="VI" URL="../Planecontrols.vi"/>
+		<Item Name="Planecontrolscrashworks.vi" Type="VI" URL="../Planecontrolscrashworks.vi"/>
 		<Item Name="position_window.vi" Type="VI" URL="../position_window.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
