@@ -13,6 +13,7 @@
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="blink.vi" Type="VI" URL="../blink.vi"/>
+		<Item Name="crashdetect_overview.vi" Type="VI" URL="../crashdetect_overview.vi"/>
 		<Item Name="dataclusters.lvlib" Type="Library" URL="../dataclusters.lvlib"/>
 		<Item Name="global.vi" Type="VI" URL="../global.vi"/>
 		<Item Name="main.vi" Type="VI" URL="../main.vi"/>
